@@ -1,0 +1,59 @@
+{
+  "name": "git-helper",
+  "displayName": "Git Helper - Learn Git Step by Step",
+  "description": "A beginner-friendly VS Code extension that teaches Git by guiding you through each step with explanations and one-click commands.",
+  "version": "0.1.0",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Education",
+    "SCM Providers"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "gitWalkthrough",
+          "name": "Git Walkthrough"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "gitHelper.status",
+        "title": "Git Helper: Status"
+      },
+      {
+        "command": "gitHelper.add",
+        "title": "Git Helper: Add All"
+      },
+      {
+        "command": "gitHelper.commit",
+        "title": "Git Helper: Commit"
+      },
+      {
+        "command": "gitHelper.push",
+        "title": "Git Helper: Push"
+      },
+      {
+        "command": "gitHelper.pull",
+        "title": "Git Helper: Pull"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
