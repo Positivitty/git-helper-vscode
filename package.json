@@ -1,9 +1,9 @@
 {
-  "name": "git-helper",
+  "name": "git-helper-walkthrough",
   "displayName": "Git Helper - Learn Git Step by Step",
   "description": "A beginner-friendly VS Code extension that teaches Git by guiding you through each step with explanations and one-click commands.",
   "version": "0.1.0",
-  "publisher": "your-name",
+  "publisher": "posittivitty",
   "engines": {
     "vscode": "^1.85.0"
   },
